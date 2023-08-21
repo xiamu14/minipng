@@ -9,7 +9,7 @@
     "src"
   ],
   "bin": {
-    "minipng": "./src/mod.mjs"
+    "nanopng": "./src/mod.mjs"
   },
   "keywords": [],
   "author": "ben",
