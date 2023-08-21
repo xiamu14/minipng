@@ -1,0 +1,25 @@
+{
+  "name": "minipng",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "src"
+  ],
+  "bin": {
+    "minipng": "./src/mod.mjs"
+  },
+  "keywords": [],
+  "author": "ben",
+  "license": "ISC",
+  "dependencies": {
+    "cac": "^6.7.14",
+    "nanoid": "^4.0.2",
+    "picocolors": "^1.0.0"
+  },
+  "devDependencies": {
+    "renew-it": "^1.5.2"
+  }
+}
