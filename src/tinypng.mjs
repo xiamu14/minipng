@@ -159,7 +159,7 @@ function fileUpdate(imgPath, obj) {
             obj.input.size
           )} \n压缩大小：${formatBytes(obj.output.size)} \n压缩率：${text.green(
             compressRatio
-          )}`
+          )}\n`
         );
         // 删除原文件
         fs.unlinkSync(imgPath, () => {});
@@ -201,7 +201,7 @@ function copy(imgPath) {
   fs.copyFileSync(imgPath, imgDestPath);
 
   console.log(
-    `图片：${filename} \n原图：${path.basename(imgPath)}\n✨ 复制完成`
+    `图片：${filename} \n原图：${path.basename(imgPath)}\n✨ 复制完成\n`
   );
   // 删除原文件
   fs.unlinkSync(imgPath, () => {});
