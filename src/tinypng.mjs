@@ -66,8 +66,10 @@ function createFileName(imgPath) {
   if (/\[hash:?\d*\]/.test(filename)) {
     const len = filename.match(/\[hash:?(\d*)\]/);
     let hash = md5;
-    if (len[1] && Number(len[1] > 0)) {
-      hash = md5.slice(0, Number(len[1]));
+    if (len[1] && Number(len[1] >= 6)) {
+      // NOTE: 防止超出长度
+      const end = Math.min(Number(len[1]), md5.length);
+      hash = md5.slice(0, end);
     }
     filename = filename.replace(/\[hash:?\d*\]/, hash);
   }
