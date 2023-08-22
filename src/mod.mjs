@@ -5,7 +5,7 @@ import text from "picocolors";
 import path from "path";
 import fs from "fs";
 import tinypng from "./tinypng.mjs";
-import { rootPath } from "./consts.mjs";
+import { rootPath } from "./const.mjs";
 const cli = cac();
 
 cli
