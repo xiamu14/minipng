@@ -92,13 +92,13 @@ function createFileName(imgPath) {
 function fileList(folder) {
   fs.readdir(folder, async (err, files) => {
     if (err) console.error(err);
-    const spinner = niceSpinner(`tiny images`);
+    const spinner = niceSpinner(`Tiny images in progress... 🥤`);
     spinner.start();
     const list = files.map((file) => {
       return fileFilter(path.join(folder, file));
     });
     await Promise.allSettled(list);
-    spinner.finalize("stop");
+    spinner.finalize("succeed");
     logUtil.show();
   });
 }
@@ -242,8 +242,8 @@ function copy(imgPath) {
   // );
   logUtil.addItem([
     `filename：${filename}`,
-    `source：${path.basename(imgPath)}`,
-    `✨ copy succeeded`,
+    `source：  ${path.basename(imgPath)}`,
+    `✨ Copy succeeded`,
   ]);
   // 删除原文件
   fs.unlinkSync(imgPath, () => {});

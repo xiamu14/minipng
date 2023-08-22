@@ -9,7 +9,7 @@ export default function logs(params) {
         return item.join("\n");
       })
       .join("\n\n");
-    console.log(str);
+    console.log(`\n${str}`);
   }
 
   return { addItem, show };
