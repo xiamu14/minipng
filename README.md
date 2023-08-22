@@ -10,7 +10,7 @@ pnpm add -D nanopng
 pnpm nanopng --filename='[name]-[hash:6]' --dest='public/assets/images'
 ```
 
-<img src="https://github.com/xiamu14/nanopng/blob/master/screenshots/cbpk.png?raw=true" alt="screenshots" title="A cute kitten" width="400" height="400" style="object-fit:contain;" />
+<img src="https://github.com/xiamu14/nanopng/blob/master/screenshots/cbpk.png?raw=true" alt="screenshots" width="400"  />
 
 # TODO
 
